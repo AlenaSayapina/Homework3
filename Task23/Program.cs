@@ -4,14 +4,8 @@
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Введите целое число");
-int number = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число");
+int num = int.Parse(Console.ReadLine());
 
-double Result(int iLocal)
-{
-    return Math.Pow(iLocal, 3);
-}
-for (int i = 1; i <= number; i++)
-{
-    Console.Write(Result(i) + " ");
-}
+for (int i = 1; i <= num; i++)
+   Console.WriteLine("{0}^3 = {1}", i, i * i * i);
